@@ -1,15 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <chart :title="title" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import chart from './components/chart.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    chart
+    // HelloWorld
+  },
+  data() {
+    return {
+      title: 'フードファイターチャートですう'
+    }
   }
 }
 </script>
