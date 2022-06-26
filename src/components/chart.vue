@@ -23,9 +23,6 @@ export default {
       required: true,
       default: 'フードファイターチャート',
     },
-  },
-  mounted: function () {
-    // alert('pge');
   }
 }
 </script>
